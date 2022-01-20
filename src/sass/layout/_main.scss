@@ -1,0 +1,17 @@
+.main {
+  margin-top: $--mg-sm;
+  &__title {
+    margin: 0;
+    padding: 3.5rem 0;
+    padding-bottom: 2.5rem;
+  }
+
+  &__num {
+    font-size: 1.5rem;
+    color: $--cl-subtitle;
+    margin-top: 2.5rem;
+    span {
+      display: block;
+    }
+  }
+}

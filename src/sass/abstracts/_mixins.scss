@@ -1,0 +1,25 @@
+@mixin open-bar($background, $radius) {
+  background-color: $background;
+  padding: 1.2rem 0.5rem;
+  border-radius: $radius;
+  position: absolute;
+  top: 2.3rem;
+  cursor: pointer;
+}
+
+@mixin dropdown {
+  background-color: $--cl-primary;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 0 !important;
+  border: 1px solid $--cl-tertiary !important;
+  border-radius: 0.8rem;
+  color: $--cl-title;
+  font-weight: 500;
+  font-size: 1.3rem;
+  width: 20rem;
+  height: 3.6rem;
+  line-height: 2rem;
+  padding: 0 1.8rem !important;
+}

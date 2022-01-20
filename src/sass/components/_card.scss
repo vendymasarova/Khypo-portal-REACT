@@ -1,0 +1,91 @@
+.card {
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  border: 0 !important;
+  text-align: center;
+  max-width: 38.4rem;
+
+  &__img {
+    position: relative;
+    max-width: 35.2rem;
+    width: 100%;
+
+    &--label {
+      position: absolute;
+      top: 0.8rem;
+      left: 0.8rem;
+      span {
+        display: inline-block;
+        color: $--cl-primary;
+        font-size: 1.2rem;
+        padding: 0.2em 0.7em;
+        font-weight: 400;
+        border-radius: 4px !important;
+      }
+      .free {
+        background-color: $--cl-free;
+      }
+      .danger {
+        background-color: $--cl-danger;
+      }
+    }
+    img {
+      width: 100%;
+      height: 16.7rem;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+  }
+  &__title {
+    padding-top: $--pd-sm;
+    color: $--cl-title;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  &__subtitle {
+    color: $--cl-info;
+    font-size: 1.3rem;
+    line-height: 1rem;
+    font-weight: 400;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+    padding-bottom: $--pd-sm;
+    div {
+      padding: 0 $--pd-sm;
+      border-right: 1px solid $--cl-tertiary !important;
+      &:nth-child(3) {
+        border: 0 !important;
+      }
+      &:nth-child(2) {
+        border: 0;
+        padding: 0 2.5rem;
+      }
+      &:nth-child(1) {
+        border: 0;
+        padding-right: 0 1rem;
+      }
+      h4 {
+        color: $--cl-title;
+        font-size: 1.5rem;
+      }
+      span {
+        font-size: 1.2rem;
+        color: $--cl-info;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    &__info {
+      div {
+        padding: 0 1rem;
+      }
+    }
+  }
+}

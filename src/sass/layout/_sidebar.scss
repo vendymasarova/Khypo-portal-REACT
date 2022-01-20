@@ -1,0 +1,29 @@
+.sidebar {
+  background-color: $--cl-primary;
+  min-height: 100vh;
+  transform: translateX(100%);
+  transition: 0.5s ease-in;
+  position: absolute;
+  width: 90px;
+  right: 0;
+  box-shadow: -9px 0px 13px -8px $--cl-searchBar;
+  &__open {
+    @include open-bar($--cl-primary, 0.5rem 0 0 0.5rem);
+    box-shadow: -9px 0px 13px -9px$--cl-searchBar;
+    left: -1.8rem;
+  }
+  &__user {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 6.5rem;
+    img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+    }
+  }
+}
+.open {
+  transform: translateX(0);
+}
